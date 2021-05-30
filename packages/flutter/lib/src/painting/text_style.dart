@@ -425,7 +425,14 @@ const double _kDefaultFontSize = 14.0;
 /// or no custom fallback was provided, the platform font fallback will be used.
 ///
 /// ### Inconsistent platform fonts
+/// 
+/// By default, fonts differ depending on the platform. 
 ///
+///  * Default font for `Android`,`Fuchsia` and `Linux` is `Segoe UI`
+///  * Default font for `iOS` is `.SF UI Display`/`.SF UI Text`
+///  * Default font for `MacOS` is `.AppleSystemUIFont`
+///  * Default font for `Windows` is `Segoe UI`
+/// 
 /// Since Flutter's font discovery for default fonts depends on the fonts present
 /// on the device, it is not safe to assume all default fonts will be available or
 /// consistent across devices.
